@@ -1,0 +1,17 @@
+﻿<Window x:Class="u1_02_NolanOutput.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:u1_02_NolanOutput"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="lblTitle" Margin="180,0,193,284" >Please enter your name</Label>
+        <TextBox x:Name="txtFirstName" FontSize="20" Margin="34,58,252,169" TextChanged="txtFirstName_TextChanged">First name</TextBox>
+        <TextBox x:Name="txtLastName" FontSize="20" Margin="270,58,40,169" TextChanged="txtLastName_TextChanged">Last name</TextBox>
+        <Slider x:Name="sliderAge" Maximum="100" Margin="34,155,65,132"></Slider>
+        <Button x:Name="btnShowGreeting" Margin="190,192,179,71" Click="btnShowGreeting_Click">Show Output</Button>
+        <Label x:Name="lblOutput" Margin="164,248,140,13"></Label>
+    </Grid>
+</Window>
